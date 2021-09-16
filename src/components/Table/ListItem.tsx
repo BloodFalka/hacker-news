@@ -128,13 +128,11 @@ const Date = styled.div`
 
 const Domain = styled.a`
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     font-size: 1rem;
     text-decoration: none;
-    color: #000000b0;
+    color: #00000094;
+    white-space: nowrap;
     @media(max-width: 576px) {
         font-size: 0.8rem;
     }
