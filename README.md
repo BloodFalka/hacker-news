@@ -1,5 +1,5 @@
 # HACKER-NEWS APP
-You can find a deployed app in my [portfolio](https://bloodfalka.ru/hacker-news)\
+You can find a deployed app in my [portfolio](https://bloodfalka.ru/hacker-news)
 
 ## Available Scripts
 In the project directory, you can run:
