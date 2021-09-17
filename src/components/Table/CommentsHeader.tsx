@@ -3,19 +3,20 @@ import styled from 'styled-components'
 import { RowWrapper } from '../Table/ListItem';
 import '../Filters/filters.scss'
 
-const CommentsHeader:React.FC<{count: number, title: string}> = ({count, title}) => {
+const CommentsHeader:React.FC<{count: number, title: string, url? :string}> = ({count, title, url}) => {
 
     return (
-        <div className={'filter-wrapper'}>
+        <a style={{textDecoration: 'none'}} rel="noopener noreferrer" href={url} target={'_blank'} className={'filter-wrapper'}>
             <Wrapper>
                 <h2>{title}</h2>
                 <span>Comments: {count}</span>
             </Wrapper>
-        </div>
+        </a>
     )
 }
 
 const Wrapper = styled.div`
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +44,7 @@ const Wrapper = styled.div`
         }
     }
     span{
+        color: #000000a2;
         margin-top: 10px;
         @media (max-width: 576px) {
             font-size: 0.8rem;

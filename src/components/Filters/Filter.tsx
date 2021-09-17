@@ -28,7 +28,7 @@ const Wrapper = styled.div`
     font-weight: bold;
     color: #4b3947;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    background-color: #f1f1f1;
+    background-color: #ffffff !important;
     text-transform: capitalize;
     }
 `

@@ -8,6 +8,7 @@ const initialState = {
     items: null as null | ItemType[],
     commentsCount: 0,
     loading: true,
+    url: null as null | string,
     page:{
         current: 0,
         max: 1
@@ -45,6 +46,7 @@ const itemSlice = createSlice({
             state.items = action.payload.comments
             state.commentsCount = action.payload.comments_count
             state.title = action.payload.title
+            state.url = action.payload.url
             state.loading = false
         })
     },

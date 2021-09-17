@@ -21,7 +21,7 @@ const Table: React.FC<{state: ItemStateType|ListStateType, sortItems?: (sortBy: 
         <>
         {isItemPage?
         //@ts-ignore
-            <CommentsHeader title={state.title} count={state.commentsCount}/>:
+            <CommentsHeader title={state.title} count={state.commentsCount} url={state.url}/>:
             <FeedFilters sortHandler={sortItems} filtersAscending={filter.ascending}/>
         }
 

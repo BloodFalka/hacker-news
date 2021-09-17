@@ -39,8 +39,8 @@ const InfinityScrollObserver: React.FC<{isLoading: boolean, onReach: any, isEndR
 
 const EndReached = styled.div`
 	text-align: center;
-	background-color: #f0f0f0;
-	color: #7F7F7F;
+	background-color: #ffffff;
+	color: #655659;
 	font-weight: bold;
 	border-radius: 5px;
 	font-size: 1rem;
